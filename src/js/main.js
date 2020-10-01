@@ -1,6 +1,6 @@
 import EngineApp from "../../Framework/engine.js"
 import manageRoutes from "../routes/route.js"
-var eng = new EngineApp()
+let eng = new EngineApp()
 start()
 function start(){
     setTimeout(function(){
@@ -11,3 +11,6 @@ function start(){
         
     },6000)
 }
+
+
+export default eng
