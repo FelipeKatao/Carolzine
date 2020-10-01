@@ -80,3 +80,11 @@
 }
 
 /*Responsividade*/
+@media (max-width:660px){
+    .login-box{
+        margin-top: -10vh;
+    }
+    .backElement{
+        height: 60vh;
+    }
+}
