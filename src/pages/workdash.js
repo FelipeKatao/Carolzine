@@ -1,5 +1,6 @@
 import EngineApp from "../../Framework/engine.js"
 import menu from "../components/menu.js"
+import sidemenu from "../components/sidemenu.js"
 
 let eng = new EngineApp()
 function workdash(){
@@ -9,7 +10,7 @@ function workdash(){
     eng.componentsEngine.renderComponent("app","workdash")
 }
 function workdashRender(){
-    return menu(),"<div>Area de trabalho</div>"
+    return menu(),sidemenu(),"<div class='dashpaper'></div>"
 }
 
 export default workdash
