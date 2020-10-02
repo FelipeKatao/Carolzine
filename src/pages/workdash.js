@@ -15,7 +15,7 @@ function ApiPager(){
    fetch('http://kataofelipe.pythonanywhere.com/projects/geradores_Quimicos')
   .then(response => response.json())
   .then(function(data){
-      document.getElementById("teste").innerText+=data["title"]+" <-Title"
+      document.getElementById("teste").innerText+=data["Quimica_organica"]["corpo"]
       console.log(data)
   })
 }
