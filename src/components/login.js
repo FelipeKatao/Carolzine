@@ -1,6 +1,8 @@
-import EngineApp from '../../Framework/engine.js'
+import EngineApp from "../../Framework/engine.js"
 import verifyPassword from "../controlers/acessLogin.js"
-import eng from "../js/main.js"
+import gotoPages from "../js/main.js"
+
+let eng = new EngineApp()
 
 function login(){
     eng.componentsEngine.createComponent("login",loginRender())
@@ -11,7 +13,7 @@ function login(){
 function addList(){
     document.getElementById("btAcess").addEventListener("click",function(){
         if(verifyPassword(document.getElementById("IdLogin").value,document.getElementById("PassIdLogin").value)){
-            eng.routesEngine.goToLink("http://127.0.0.1:5500/index.html#workArea")
+           eng.routesEngine.goToLink("http://127.0.0.1:5500/index.html#workArea") 
         }
         else{
             eng.renderEngine.changeContentElement("identLogin","Senha ou usuarios incorretos")

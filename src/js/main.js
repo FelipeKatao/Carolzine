@@ -2,7 +2,7 @@ import EngineApp from "../../Framework/engine.js"
 import manageRoutes from "../routes/route.js"
 let eng = new EngineApp()
 start()
-function start(){
+export default function start(){
     setTimeout(function(){
         console.log("hello")
         eng.renderEngine.pageDynamic="app"
@@ -11,6 +11,10 @@ function start(){
         
     },6000)
 }
+function gotoPages(page){
+    console.log(page)
+    //eng.routesEngine.goToLink("http://127.0.0.1:5500/index.html#workArea")
+}
 
 
-export default eng
+export {eng,gotoPages,start}
