@@ -8,11 +8,9 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
-
 @app.route('/projects/<name>')
 def hello_name(name):
     with open('projects.json') as f:
-        d = json.load(f)
         print(d)
         for elem in d:
            if(elem == name):
