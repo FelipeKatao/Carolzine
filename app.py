@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Hello World!"
+    return "<h1>Hello World!</h1>"
 
 @app.route('/projects/<name>')
 def hello_name(name):
@@ -19,5 +19,4 @@ def hello_name(name):
     return "Projeto não encontrado 404"
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
     app.run(debug=True) 
