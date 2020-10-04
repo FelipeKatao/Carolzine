@@ -12,6 +12,12 @@ function workdash(){
     ApiPager()
 }
 function ApiPager(){
+    axios.get('http://kataofelipe.pythonanywhere.com/projects/geradores_Quimicos',{
+        headers:{"Acess-Control-Allow-Origin":"http://kataofelipe.pythonanywhere.com"}
+    })
+    .then(function(response){
+        console.log(response)
+    })
    fetch('http://kataofelipe.pythonanywhere.com/projects/geradores_Quimicos')
   .then(response => response.json())
   .then(function(data){
