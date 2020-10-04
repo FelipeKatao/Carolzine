@@ -1,1 +1,1 @@
-web: gunicorn carolzine:app
+web: gunicorn app:app
