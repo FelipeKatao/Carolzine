@@ -12,7 +12,7 @@ function workdash(){
     ApiPager()
 }
 function ApiPager(){
-    fetch('http://kataofelipe.pythonanywhere.com/projects/geradores_Quimicos')
+    fetch('https://carolzine.herokuapp.com/projects/Quimica_organica')
     .then(response => response.json())
     .then(json => console.log(json))
 
