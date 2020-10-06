@@ -14,6 +14,7 @@ def index():
 @app.route('/projects/<name>')
 def hello_name(name):
     with open('projects.json') as f:
+        d=""
         print(d)
         for elem in d:
            if(elem == name):
