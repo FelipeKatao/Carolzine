@@ -1,5 +1,6 @@
 import os
 from flask import Flask
+from flask import jsonify
 from flask_cors import CORS
 import json
 
@@ -9,7 +10,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/')
 def index():
-    return "<h1>Hello World!</h1>"
+    return jsonify({"projeto":"Carolzine"})
 
 @app.route('/projects/<name>')
 def hello_name(name):
@@ -17,7 +18,7 @@ def hello_name(name):
         d= json.load(f)
         for elem in d:
            if(elem == name):
-               return d[name]["titulo"]+","+d[name]["corpo"]
+               return jsonify(d)
     return "Projeto não encontrado 404"
 
 if __name__ == '__main__':
