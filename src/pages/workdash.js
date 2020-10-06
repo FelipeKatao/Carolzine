@@ -14,11 +14,18 @@ function workdash(){
 function ApiPager(){
     fetch('https://carolzine.herokuapp.com/projects/Quimica_organica')
     .then(response => response.json())
-    .then(json => console.log(json))
+    .then(json => ChangeContent(json))
 
 }
+function ChangeContent(object){
+    document.getElementById("titulo1").innerText=object["Quimica_organica"]["titulo"]
+    document.getElementById("article1").innerText=object["Quimica_organica"]["corpo"]
+}
 function workdashRender(){
-    return menu(),sidemenu(),"<div id='teste' class='dashpaper'></div>" 
+    return menu(),sidemenu(),"<div id='teste' class='dashpaper'>"+
+    "<h1 id='titulo1' class='tituloPage'></h1>"+
+    "<article id='article1' class='corpoPage'></article>"+
+    "</div>" 
 }
 
 export default workdash

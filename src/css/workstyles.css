@@ -52,3 +52,12 @@
     margin-left: -2vh;
     padding-top: 2vh;
 }
+
+/*Style for pages */
+.tituloPage{
+    text-align: center;
+}
+.corpoPage{
+    text-align: center;
+    font-size: 12px;
+}
