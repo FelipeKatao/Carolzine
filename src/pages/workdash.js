@@ -15,7 +15,6 @@ function ApiPager(){
     fetch('https://carolzine.herokuapp.com/projects/Quimica_organica')
     .then(response => response.json())
     .then(json => ChangeContent(json))
-
 }
 function ChangeContent(object){
     document.getElementById("titulo1").innerText=object["Quimica_organica"]["titulo"]
