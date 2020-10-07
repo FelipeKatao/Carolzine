@@ -33,8 +33,8 @@ function loginRender(){
         "<input id='IdLogin' placeholder='login' autocomplete='username'>"+
         "<h4>Senha:</h4>"+
         "<input id='PassIdLogin' placeholder='senha' type='password' autocomplete='current-password'><br>"+
-        "<button id='btAcess'>Acessar</button>"+
    "</form>"+
+   "<button id='btAcess'>Acessar</button>"+
    "</div>"
 }
 
