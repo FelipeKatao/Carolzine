@@ -10,5 +10,11 @@ function manageRoutes(){
     eng.routesEngine.registerRoute("http://127.0.0.1:5500/index.html#workArea",workdash)
     eng.routesEngine.runRoute("http://127.0.0.1:5500/","http://127.0.0.1:5500/index.html#Login")
 }
+function routesCreated(){
+    eng.routesEngine.registerRoute("http://127.0.0.1:5500/index.html#Login",welcomePage)
+    eng.routesEngine.registerRoute("http://127.0.0.1:5500/index.html?#Login",welcomePage)
+    eng.routesEngine.registerRoute("http://127.0.0.1:5500/index.html#workArea",workdash)
+    console.log("esta rodando")
+}
 
-export default manageRoutes
+export {manageRoutes,routesCreated,eng}

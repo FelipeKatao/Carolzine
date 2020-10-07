@@ -28,6 +28,7 @@ class Components{
         for(let index =0;index<this.componentsArray.length;index++){
             if(this.componentsArray[index]==componentName){
                 component = this.componentsArray[index+1]
+                console.log(this.componentsArray[index]+"times")
                 break
             }
         }

@@ -2,6 +2,7 @@ import EngineApp from "../../Framework/engine.js"
 import menu from "../components/menu.js"
 import sidemenu from "../components/sidemenu.js"
 
+
 let eng = new EngineApp()
 function workdash(){
     document.getElementById("app").classList+="app-before"
@@ -15,6 +16,7 @@ function ApiPager(){
     fetch('https://carolzine.herokuapp.com/projects/Quimica_organica')
     .then(response => response.json())
     .then(json => ChangeContent(json))
+    console.log("Executa ai")
 }
 function ChangeContent(object){
     document.getElementById("titulo1").innerText=object["Quimica_organica"]["titulo"]
