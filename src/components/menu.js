@@ -15,6 +15,7 @@ function menurender(){
         "<li>| Adicionar elemento |</li>"+
         "<li>| Gerar relatorio |</li>"+
     "</ul>"+
+    "<div class='avatar'>F</div>"+
     "</nav>"
 }
 

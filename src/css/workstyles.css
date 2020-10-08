@@ -37,6 +37,45 @@
     z-index: 1;
     
 }
+.userbanner{
+    background-color: #ebaab4;
+    height: 30vh;
+    width: 190vh;
+    margin: auto;
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: row;
+}
+.userAbout{
+    padding: 4vh;
+    color: white;
+    font-family: 'Sansita Swashed', cursive;
+}
+.userAbout h4{
+    margin-top: -5vh;
+}
+.avatar{
+    background-color: white;
+    height: 6vh;
+    width: 6vh;
+    float: left;
+    margin-top: -2vh;
+    text-align: center;
+    font-family: 'Sansita Swashed', cursive ;
+    border-radius: 4vh;
+    stroke: black;
+    margin-left: 40vh;
+}
+.avatarLarge{
+    height: 16vh;
+    width: 16vh;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 10vh;
+    margin-top: 8vh;
+    margin-left: 4vh;
+}
+
 /*side menu*/
 .sidemenuWork{
     float: left;
@@ -60,4 +99,41 @@
 .corpoPage{
     text-align: center;
     font-size: 12px;
+}
+
+/*squares datas*/
+.box-info{
+    margin: auto;
+    display: flex;
+    margin-left: 15vh;
+    margin-top: 2vh;
+    flex-direction: row;
+    padding-left: 4vh;
+    align-content: center;
+
+}
+.squareData{
+    font-family: 'Sansita Swashed', cursive ;
+    color:white;
+    margin-left: 10vh;
+    height: 40vh;
+    width: 40vh;
+    background-color: #ebaab4;
+    display: flex;
+    flex-direction: column;
+}
+.squareGraph{
+    background-color: greenyellow;
+    height: 20vh;
+    width: 38vh;
+    margin-left: 1vh;
+    margin-top: 1vh;
+}
+.TitleData{
+    margin-top: 2vh;
+    margin-left: 1vh
+}
+.InfoData{
+    margin-left: 1vh;
+    margin-top:  1vh;
 }
