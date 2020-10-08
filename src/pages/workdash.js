@@ -6,6 +6,7 @@ import addevents from "../controlers/menuLinks.js"
 
 let eng = new EngineApp()
 function workdash(){
+    //location.reload()
     document.getElementById("app").classList+="app-before"
     eng.renderEngine.pageDynamic="app"
     eng.renderEngine.clearPage()
