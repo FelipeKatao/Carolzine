@@ -1,9 +1,13 @@
-import EngineApp from '../../Framework/engine.js'
+import {eng} from "../routes/route.js"
 
-let eng =new EngineApp()
 function menu(){
     eng.componentsEngine.createComponent("menu",menurender())
     eng.componentsEngine.renderComponent("app","menu")
+    document.getElementById("userID").addEventListener("click",GotoMenu_User,false)
+}
+
+function GotoMenu_User(){
+    eng.routesEngine.goToLink("http://127.0.0.1:5500/index.html#user")
 }
 
 function menurender(){
@@ -15,7 +19,7 @@ function menurender(){
         "<li>| Adicionar elemento |</li>"+
         "<li>| Gerar relatorio |</li>"+
     "</ul>"+
-    "<div class='avatar'>F</div>"+
+    "<a id='userID' href='http://127.0.0.1:5500/index.html#user'><div class='avatar'>F</div></a>"+
     "</nav>"
 }
 

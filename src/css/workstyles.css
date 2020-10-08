@@ -157,9 +157,12 @@
 .squareFile{
     background-color: #ebaab4;
     color: white;
+    text-decoration: none;
     font-family: 'Sansita Swashed', cursive ;
     padding: 4vh;
 }
+a{ text-decoration: none;}
+
 .titleFile{
     font-size: larger;
 }
