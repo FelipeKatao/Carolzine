@@ -137,3 +137,18 @@
     margin-left: 1vh;
     margin-top:  1vh;
 }
+.log-out a{text-decoration: none;color: white;}
+
+/*Work space*/
+#worksSapce{
+    height: auto;
+    width: 190vh;
+    margin: auto;
+    margin-top: 5vh;
+}
+.titleBasic{
+    color: #ebaab4;
+    font-family: 'Sansita Swashed', cursive ;
+    font-size: larger;
+    border-bottom: #ebaab4 solid 1vh;
+}

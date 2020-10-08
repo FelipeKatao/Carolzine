@@ -19,9 +19,17 @@ function userpagerender(){
     "<div class='userAbout'><h1>Seja bem vindo(a) "+sessionStorage.getItem("user")+"</h1>"+
     "<br> <h4>Você possui: 0 </h4>"+
     "<br> <h4>Conexões e referências: 0 </h4>"+
+    "<br><h4 class='log-out'><a href='#'>Encerrar Sessão</a></h4>"+
     "</div>"+
     "</div>"+
     "<div id='box-info-data' class='box-info'>"+
+    "</div>"+
+    "<div id='worksSapce'>"+
+    "<div class='titleBasic'>Seus trabalhos</div>"+
+    "<div class='box-info'>"+
+    "<div>Quimica Organica.PDF</div>"+
+    "<div>Sistemas quimicos.PDF</div>"+
+    "</div>"+
     "</div>"  
 }
 
