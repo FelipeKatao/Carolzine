@@ -1,6 +1,7 @@
 import EngineApp from "../../Framework/engine.js"
 import menu from "../components/menu.js"
 import sidemenu from "../components/sidemenu.js"
+import addevents from "../controlers/menuLinks.js"
 
 
 let eng = new EngineApp()
@@ -17,7 +18,9 @@ function workdash(){
         eng.renderEngine.clearPage()
        return eng.renderEngine.renderHtml("app","<div>Você precisa estar logado para acessar esta pagina</div>")
     }
-    ApiPager()
+    //ApiPager()
+    addevents()
+
 }
 function ApiPager(){
     fetch('https://carolzine.herokuapp.com/projects/Quimica_organica')

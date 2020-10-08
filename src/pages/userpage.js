@@ -5,6 +5,8 @@ import squareFile from "../components/FileSquare.js"
 
 function userpage(){
     document.getElementById("app").classList+="app-before"
+    eng.renderEngine.pageDynamic="app"
+    eng.renderEngine.clearPage()
     eng.componentsEngine.createComponent("pageUser",userpagerender())
     eng.componentsEngine.renderComponent("app","pageUser")
     squareData(1,"Criação de artigos","Os seus relatorios dos ultimos 15 dias de criação","","red")
