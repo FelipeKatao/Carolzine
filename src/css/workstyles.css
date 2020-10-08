@@ -152,3 +152,17 @@
     font-size: larger;
     border-bottom: #ebaab4 solid 1vh;
 }
+
+/*Square Files*/
+.squareFile{
+    background-color: #ebaab4;
+    color: white;
+    font-family: 'Sansita Swashed', cursive ;
+    padding: 4vh;
+}
+.titleFile{
+    font-size: larger;
+}
+.aboutFile{
+    font-size: medium;
+}
